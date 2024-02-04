@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 50px;
+    background: linear-gradient(to left, rgb(185, 31, 31), #c40ca2, #0e7493, #6344a0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container i {
+    font-size: 70px;
+}
+
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+span {
+    font-size: 25px;
+}
+
+@media(max-width:680px) {
+    body {
+        flex-direction: column;
+    }
+}
