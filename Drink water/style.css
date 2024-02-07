@@ -1,13 +1,13 @@
 :root{
     --border-color:#3C3633;
-    --fill-color:#43766C ;
+    --fill-color:aqua ;
 }
 
 *{
     box-sizing: border-box;
 }
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(#E6A4B4,#910a67,#E3E1D9);
     color: white;
     display: flex;
@@ -43,7 +43,7 @@ h3{
     height: 95px;
     width: 50px;
     border-radius: 0 0 20px 20px;
-    background: #7FC7D9;
+    background: white;
     cursor: pointer;
      font-size: 14px;
      align-items: center;
@@ -54,7 +54,7 @@ h3{
 }
 .cup.cup-small.full {
     background: var(--fill-color);
-    color: white;
+    color: rgb(83, 22, 157);
 }
 .cups {
     display: flex;
@@ -62,7 +62,33 @@ h3{
     width: 280px;
 }
 .remained {
+    display: flex;
+    flex-direction: column;
    align-items: center;
    justify-content: center;
    text-align: center;
+   flex: 1;
+   transition: 0.3s ease;
+}
+.remained span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.remained small {
+    font-size: 12px;
+}
+.percentage {
+    background-color: var(--fill-color);
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   height: 0;
+  transition: 0.3s ease;
+}
+.text{
+    text-align: center;
+    margin: 0 0 5px;
 }
